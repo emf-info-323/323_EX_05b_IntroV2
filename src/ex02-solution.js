@@ -40,15 +40,7 @@ function convertirCSVEnObjet(contenuCSV) {
     }
 
     // Trier la liste de tous les empereurs par "number"
-    for (let i = 0; i < empereurs.length - 1; i++) {
-        for (let j = i + 1; j < empereurs.length; j++) {
-            if (empereurs[i].number > empereurs[j].number) {
-                const temp = empereurs[i];
-                empereurs[i] = empereurs[j];
-                empereurs[j] = temp;
-            }
-        }
-    }
+    empereurs.sort((empereur1, empereur2) => { return empereur1.number > empereur2.number });
 
     // Créer le résultat final escompté
     let jsonData = {};
