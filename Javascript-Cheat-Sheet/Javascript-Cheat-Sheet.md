@@ -19,6 +19,7 @@
 - [`findIndex()` - premier index qui satisfait une condition](#findindex---premier-index-qui-satisfait-une-condition)
 - [`indexOf()` et `lastIndexOf()` - premier/dernier élément qui correspond](#indexof-et-lastindexof---premierdernier-élément-qui-correspond)
 - [`push()`, `pop()`, `shift()` et `unshift()` - ajouter/supprime au début/fin dans un tableau](#push-pop-shift-et-unshift---ajoutersupprime-au-débutfin-dans-un-tableau)
+- [`slice()` - ne conserver que certaines lignes d'un tableau](#slice---ne-conserver-que-certaines-lignes-dun-tableau)
 - [`splice()` - supprimer/insérer/remplacer des valeurs dans un tableau](#splice---supprimerinsérerremplacer-des-valeurs-dans-un-tableau)
 - [`concat()` - joindre deux tableaux](#concat---joindre-deux-tableaux)
 - [`join()` - joindre des chaînes de caractères](#join---joindre-des-chaînes-de-caractères)
@@ -153,6 +154,25 @@ const foundElementIndex = elements.indexOf('James', 3); // Commence la recherche
 const array1 = [1, 2, 3];
 array1.unshift(4, 5);
 console.log(array1); // sortie attendue : Array [4, 5, 1, 2, 3]
+```
+
+## `slice()` - ne conserver que certaines lignes d'un tableau
+
+Renvoie une copie superficielle (shallow copy) d'une portion du tableau d'origine, définie par un indice de début (compris) et un indice de fin (exclus).
+
+N.B. Si fin est un indice négatif, il indique un décalage depuis la fin de la séquence.
+
+```javascript
+const animals = ["ant", "bison", "camel", "duck", "elephant"];
+
+console.log(animals.slice(2));
+// Expected output: Array ["camel", "duck", "elephant"]
+
+console.log(animals.slice(2, 4));
+// Expected output: Array ["camel", "duck"]
+
+console.log(animals.slice(1, -1));
+// Expected output: Array ["bison", "camel", "duck"]
 ```
 
 ## `splice()` - supprimer/insérer/remplacer des valeurs dans un tableau
@@ -306,7 +326,7 @@ const inventaire = [
         { produit:"asperges",    categorie:"legume",   nbre:9 },
         { produit:"bananes",     categorie:"fruit",    nbre:5 },
         { produit:"poulpe",      categorie:"poisson",  nbre:3 },
-        { produit:"jambon cru",  categorie:"viande",   nbre:9 }
+        { produit:"jambon cru",  categorie:"viande",   nbre:9 },
         { produit:"fraises",     categorie:"fruit",    nbre:15 },
         { produit:"cotelette",   categorie:"viande",   nbre:14 },
         { produit:"cerises",     categorie:"fruit",    nbre:22 },
@@ -360,7 +380,7 @@ tableau1.flatMap((x) => x.split(" "));
 
 ## `reduce()` et `reduceRight()` - réduire un tableau à une seule valeur
 
-Réduit un tableau à une seule valeur.
+Réduit un tableau à une seule valeur en appliquant une fonction (qui est comme un « accumulateur ») qui traite chaque valeur d'une liste (de la gauche vers la droite) afin de la réduire à une seule valeur. Une valeur initiale peut être fournie.
 
 ```javascript
 const total = [0, 1, 2, 3];
