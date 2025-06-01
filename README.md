@@ -1,15 +1,19 @@
-<h1>Module 323 - Programmer de manière fonctionnelle</h1>
+<h1><code>Module 323</code> - Programmer de manière fonctionnelle</h1>
 
-# Exercice 02
+# 😅 Exercice 02
 
-## Objectifs
+## 🕒 Durée
+
+Le temps à disposition est de : **90'**
+
+## 🎯 Objectifs
 
 - Résoudre un problème simple à l'aide de concepts de programmation déjà connus par la PEF (boucles, tests, ...).
 - Ce travail et cette solution impliqueront forcément plusieurs lignes de code, que la PEF produira petit à petit et qu'au final elle comprendra bien.
 - Ce problème sera ensuite résolu à l'aide des outils et concepts de programmation fonctionnelle.
 - La comparaison entre les deux solutions devrait démontrer que la solution "programmation fonctionnelle" sera non seulement plus compacte mais bien plus simple à produire et à comprendre.
 
-## Consigne
+## ✅ Consigne
 
 Vous allez faire exactement la même chose qu'à l'exercice N°1, mais **cette fois-ci en utilisant les méthodes et techniques de programmation fonctionnelle**.
 
