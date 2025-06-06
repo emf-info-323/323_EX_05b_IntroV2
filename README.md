@@ -1,6 +1,6 @@
 <h1><code>Module 323</code> - Programmer de manière fonctionnelle</h1>
 
-# 😅 Exercice 02
+# 😅 Exercice 02 - Manipulation de liste
 
 ## 🕒 Durée
 
