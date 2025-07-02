@@ -1,10 +1,10 @@
 <h1><code>Module 323</code> - Programmer de manière fonctionnelle</h1>
 
-# 😅 Exercice 02 - Manipulation de liste
+# 😅 Exercice 05b - Manipulation de liste
 
 ## 🕒 Durée
 
-Le temps à disposition est de : **90'**
+Le temps à disposition est de : **60'**
 
 ## 🎯 Objectifs
 
@@ -16,8 +16,6 @@ Le temps à disposition est de : **90'**
 ## ✅ Consigne
 
 Vous allez faire exactement la même chose qu'à l'exercice N°1, mais **cette fois-ci en utilisant les méthodes et techniques de programmation fonctionnelle**.
-
-[Inspirez-vous de cette aide pour y trouver les outils adéquats](Javascript-Cheat-Sheet/Javascript-Cheat-Sheet.md) et, encore une fois, créez votre propre "RP" à ce sujet afin de vous en approprier !
 
 ## Questions
 
